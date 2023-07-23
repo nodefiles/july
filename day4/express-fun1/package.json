@@ -1,0 +1,12 @@
+{
+  "name": "vijayindian",
+  "version": "1.0.1",
+  "description": "this is my module published in 23 July 23",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": ["vijay","intellipaat","nodejs","training","node-training"],
+  "author": "vjoy",
+  "license": "ISC"
+}
