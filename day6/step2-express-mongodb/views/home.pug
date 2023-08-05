@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link( href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css", rel="stylesheet" ) 
+    body 
+        div(class="container")
+            h1 Welcome to your life
+            ol 
+                for user in users 
+                    li User Name : #{ user.name } | Age : #{ user.age } |  City : #{ user.city }
+            form(action="#" method="post")
+                div(class="mb-3")
+                    label(for="uname" class="form-label") User's Name
+                    input(class="form-control" required name="uname" id="uname" placeholder="Enter Your Name here")
+                div(class="mb-3")
+                    label(for="uage" class="form-label") User's Age
+                    input(type="number" required min="18" max="99" class="form-control" name="uage" id="uage" placeholder="Enter Your Age here")
+                div(class="mb-3")
+                    label(for="ucity" class="form-label") User's City
+                    input(class="form-control" required name="ucity" id="ucity" placeholder="Enter Your City here") 
+                button(type="submit" class="btn btn-primary") Add New User
+            hr
+            table(class="table") 
+                thead
+                    tr 
+                        th User Name 
+                        th User Age 
+                        th User City 
+                        th Edit
+                        th Delete
+                tbody
+                    for user in users 
+                        tr
+                            td #{ user.name }
+                            td #{ user.age }
+                            td #{ user.city }
+                            td 
+                                button(class="btn btn-warning") Edit 
+                            td
+                                button(class="btn btn-danger")  Delete

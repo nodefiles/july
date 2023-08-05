@@ -1,0 +1,6 @@
+{
+    "port" : 5050,
+    "host" : "localhost",
+    "cloudDB" : "mongodb+srv://admin:CU59tehLyQymSpUl@cluster0.ywjimbt.mongodb.net/usersdb?retryWrites=true&w=majority",
+    "localDB" : "mongodb+srv://localhost::27017/usersdb"
+ }

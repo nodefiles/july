@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
+        h1 Welcome from PUG Template
+        h2 #{ company }
+        form(action="#", method="post")
+            input(name="branch")
+            button(type="submit") Add New Branch 
+        ol 
+            for branch in branches 
+                li #{ branch }
